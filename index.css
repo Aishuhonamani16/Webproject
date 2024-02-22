@@ -1,0 +1,265 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(ellipse at top, rgb(70,58,44) 8%,rgb(25,26,28) 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+nav{
+    width: 1108px;
+    height: 172px;
+    margin: auto;
+}
+ul{
+    width: 837px;
+    height: 172px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li{
+    margin-top: 80px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+.icon-link{
+    width: 35px;
+    height: 31px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#app-logo{
+    margin-top: 0px;
+    display: block;
+}
+li:hover{
+    color: gold;
+}
+li:hover.icon-link img{
+    transform: translateY(-50%);
+}
+#image-sliders{
+    width: 100vw;
+}
+#image-sliders div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    animation: scroll 20s infinite linear;
+}
+@keyframes scroll{
+    0%{
+        left:0%
+    }
+    100%{
+        left: -100%;
+    }
+}
+#upcomming-films{
+
+}
+#um-header{
+    width: 600px;
+    margin: 50px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#um-header hr{
+    width: 150px;
+    border: #FFE600 1px solid;
+}
+#um-header span{
+    font-size: 22px;
+    color: #F5F5F5;
+    
+}
+#movie-list{
+    width: 995px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+#movie-list>div{
+    width: 443px;
+    height: 318px;
+    margin: 20px;
+}
+#movie-list>div span{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: url(https://www.paramvah.com/images/grungBg.png);
+    width: 250px;
+    height: 65px;
+    transform: translateY(-35px);
+    transition: 0.3s linear;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    color: #333;
+    margin: auto;
+}
+#movie-list>div:hover span{
+    transform: translateY(-43px);
+}
+#vi-header{
+    width: 600px;
+    margin: 50px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#latest-videos{
+    margin-bottom: 70px;
+}
+#vi-header hr{
+    width: 150px;
+    border: #FFE600 1px solid;
+}
+#vi-header span{
+    font-size: 22px;
+    color: #F5F5F5;
+    
+}
+#video-list{
+    width: 1170px;
+    margin: auto;
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    
+}
+#video-list>div{
+    width: 443px;
+    height: 318px;
+    margin: 20px;
+}
+#video-list>div iframe{
+    width: 100%;
+    height: 315px;
+}
+#video-list>div p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+#video-list>div p:nth-child(3){
+    font-size: 12px;
+    color: #AFAFAF;
+    text-align: center;
+}
+#about{
+    width: 100vw;
+    height: 361px;
+    background: #EAEAEA url(https://www.paramvah.com/images/paralex1.png) right no-repeat;
+    padding: 60PX;
+}
+#about h1{
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#about h1::before , #about h1::after{
+    display: inline-block;
+    content: "";
+    width: 150px;
+    height: 1px;
+    margin: 0px 20px;
+    border-top: solid 1px #333;
+    transform: translateY(-5px);
+}
+#about p{
+    text-align: center;
+    width: 1140px;
+    margin: auto;
+    font-size: 14px;
+    color: #333;
+}
+#about a{
+    display: block;
+    background: url(https://www.paramvah.com/images/readmore.png);
+    width: 178px;
+    height: 60px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    transition: 0.6s;
+}
+#about a:hover{
+    transform: translateY(-40%);
+}
+
+footer{
+    height: 120px;
+}
+#footer-links{
+    width: 590px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-links a{
+    font-size: 14px;
+    color: #EAEAEA;
+    text-decoration: none;
+}
+#footer-links a:first-child{
+    color: #FFE600;
+}
+
+#sm-links{
+    width: 225px;
+    height: 30px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sm-links span{
+    background-color: #FFE600;
+    width: 30px;height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#copyright p{
+    font-size: 11px;
+    color: #DDDDDD;
+    text-align: center;
+}
+#copyright span{
+    color: #FFE600;
+}
+#mobie-view{
+    display: none;
+}
+
